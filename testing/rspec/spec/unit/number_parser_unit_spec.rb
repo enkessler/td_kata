@@ -87,4 +87,12 @@ describe 'NumberParser, Unit' do
     expect(parser.parse_numbers(text)).to eq(999999999)
   end
 
+  it 'can parse mixed numbers' do
+    text = ['    _  _     _  _  _  _  _ ',
+            '  | _| _||_||_ |_   ||_||_|',
+            '  ||_  _|  | _||_|  ||_| _|'].join("\n")
+
+    expect(parser.parse_numbers(text)).to eq(123456789)
+  end
+
 end

@@ -22,7 +22,8 @@ module TdKata
 
 
     def parse_entries(text)
-      lines = text.split("\n")
+      # Have to add final blank line because it gets lost on the #split
+      lines = text.split("\n") << ''
       Array.new.tap do |parsed_entries|
         entry_string = ''
 

@@ -7,7 +7,7 @@ Feature: Parsing input files
   Scenario: Parsing a single account number
     Given the following input file:
     """
-        _  _     _  _  _  _  _
+        _  _     _  _  _  _  _ 
       | _| _||_||_ |_   ||_||_|
       ||_  _|  | _||_|  ||_| _|
 
@@ -19,11 +19,11 @@ Feature: Parsing input files
   Scenario: Parsing multiple account numbers
     Given the following input file:
     """
-        _  _     _  _  _  _  _
+        _  _     _  _  _  _  _ 
       | _| _||_||_ |_   ||_||_|
       ||_  _|  | _||_|  ||_| _|
 
-     _  _  _  _  _     _  _
+     _  _  _  _  _     _  _    
     |_||_|  ||_ |_ |_| _| _|  |
      _||_|  ||_| _|  | _||_   |
 
