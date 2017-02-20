@@ -19,8 +19,8 @@ describe 'FileParser, Integration' do
             ' _||_|  ||_| _|  | _||_   |',
             ''].join("\n")
 
-
     @input_file.write(text)
+    @input_file.close
   end
 
 

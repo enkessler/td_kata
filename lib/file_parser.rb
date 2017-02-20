@@ -12,7 +12,7 @@ module TdKata
 
       Array.new.tap do |parsed_account_numbers|
         account_entries.each do |entry|
-          parsed_account_numbers << @number_parser.parse_number(entry)
+          parsed_account_numbers << @number_parser.parse_numbers(entry)
         end
       end
     end
@@ -22,9 +22,18 @@ module TdKata
 
 
     def parse_entries(text)
+      lines = text.split("\n")
       Array.new.tap do |parsed_entries|
-        # todo fix this split so that it splits into groups of 3, not every line
-        parsed_entries << text.split("\n")
+        entry_string = ''
+
+        lines.count.times do |line_number|
+          if (((line_number + 1) % 4) == 0)
+            parsed_entries << entry_string.chomp
+            entry_string = ''
+          else
+            entry_string += lines[line_number] + "\n"
+          end
+        end
       end
     end
 

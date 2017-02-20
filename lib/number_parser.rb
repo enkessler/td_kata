@@ -3,10 +3,6 @@ module TdKata
   class NumberParser
 
     def parse_numbers(text)
-      puts "provided text:"
-      puts text.inspect
-
-
       lines = text.split("\n")
       number_strings = ['', '', '', '', '', '', '', '', '']
 
@@ -17,8 +13,6 @@ module TdKata
           end
         end
       end
-      puts "number strings:"
-      puts number_strings.inspect
 
       number_strings.collect { |string| parse_number(string) }.join.to_i
     end
@@ -31,14 +25,22 @@ module TdKata
       case number_string
         when '     |  |'
           1
-        when ''
-        when ''
-        when ''
-        when ''
-        when ''
-        when ''
-        when ''
-        when ''
+        when ' _  _||_ '
+          2
+        when ' _  _| _|'
+          3
+        when '   |_|  |'
+          4
+        when ' _ |_  _|'
+          5
+        when ' _ |_ |_|'
+          6
+        when ' _   |  |'
+          7
+        when ' _ |_||_|'
+          8
+        when ' _ |_| _|'
+          9
         else
           raise(ArgumentError, "Uknown number string: #{number_string.inspect}")
       end
