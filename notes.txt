@@ -11,6 +11,7 @@ difference. Only 'segment on' and 'segment off' matter
 Future development
 -------------------
 priority:
+Handle '0'
 Finish executable file for demoing
 
 backlog:
