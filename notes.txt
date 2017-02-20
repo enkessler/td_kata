@@ -1,0 +1,4 @@
+easy testing process -> Rakefile, racatt gem
+stable environment -> Gemfile
+Clarity -> Cucumber features
+testing the 'fiddly bits' -> RSpec
