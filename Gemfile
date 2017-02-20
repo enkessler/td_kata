@@ -3,4 +3,4 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'rspec'
 gem 'cucumber'
-gem 'racatt'
+gem 'racatt'   # For easy Cucumber + RSpec testing

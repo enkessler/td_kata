@@ -2,3 +2,17 @@ easy testing process -> Rakefile, racatt gem
 stable environment -> Gemfile
 Clarity -> Cucumber features
 testing the 'fiddly bits' -> RSpec
+
+'case' strings could just as easily be binary strings. Pipe or underscore doesn't make a
+difference. Only 'segment on' and 'segment off' matter
+
+
+
+Future development
+-------------------
+priority:
+Finish executable file for demoing
+
+backlog:
+Finish remaining user stories (see requirements)
+Handle bad input files (e.g. files whose line count is not a multiple of 4, files that don't have more or less than 9 digits in account numbers)

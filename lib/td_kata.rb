@@ -1,4 +1,4 @@
-# TOp level namespace for this kata
+# Top level namespace for this kata
 module TdKata
 
 end

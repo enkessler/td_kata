@@ -21,6 +21,7 @@ module TdKata
     private
 
 
+    # todo - Refactor me: not clean enough
     def parse_entries(text)
       # Have to add final blank line because it gets lost on the #split
       lines = text.split("\n") << ''

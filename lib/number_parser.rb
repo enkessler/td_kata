@@ -6,6 +6,7 @@ module TdKata
       lines = text.split("\n")
       number_strings = ['', '', '', '', '', '', '', '', '']
 
+      # todo - Refactor me: replace magic numbers with meaningful variables
       3.times do |row|
         9.times do |number_index|
           3.times do |segment|
@@ -42,7 +43,7 @@ module TdKata
         when ' _ |_| _|'
           9
         else
-          raise(ArgumentError, "Uknown number string: #{number_string.inspect}")
+          raise(ArgumentError, "Unknown number string: #{number_string.inspect}")
       end
     end
 
